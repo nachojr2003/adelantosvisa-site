@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Prueba el asistente de ADELA</title>
+<link rel="icon" href="/assets/avatar-adela.jpg" type="image/jpeg">
+<style>
+  :root { --primario: #185888; --secundario: #E87808; --tinta: #1f2a35; --suave: #5b6876; --linea: #dfe5eb; --fondo: #f5f7f9; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: var(--tinta); background: var(--fondo); line-height: 1.65; }
+  header { background: var(--primario); color: #fff; }
+  .caja { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  .marca { display: flex; align-items: center; gap: 14px; padding-block: 22px; }
+  .marca img { width: 56px; height: 56px; border-radius: 50%; background: #fff; flex: none; }
+  .marca span { font-size: 19px; font-weight: 600; }
+  main { padding-block: 40px 28px; }
+  h1 { font-size: clamp(25px, 5.2vw, 34px); line-height: 1.2; margin: 0 0 16px; color: var(--primario); text-wrap: balance; }
+  h2 { font-size: 18px; margin: 28px 0 10px; color: var(--primario); }
+  p { margin: 0 0 14px; max-width: 62ch; }
+  .modo { display: inline-block; background: #fff4d6; color: #5a3a00; border: 1px solid #f0d28a; border-radius: 999px; padding: 3px 12px; font-size: 13px; font-weight: 600; margin-bottom: 14px; }
+  .aviso { border-left: 4px solid var(--secundario); background: #fff; padding: 14px 18px; border-radius: 0 8px 8px 0; margin-block: 22px; }
+  ul.ideas { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+  ul.ideas li code { background: #e9eef3; padding: 2px 7px; border-radius: 5px; font-size: 14px; }
+  a { color: var(--primario); }
+  footer { border-top: 1px solid var(--linea); padding-block: 22px 40px; font-size: 14px; color: var(--suave); }
+  footer .caja { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; }
+</style>
+</head>
+<body>
+<header>
+  <div class="caja marca">
+    <img src="/assets/avatar-adela.jpg" alt="Adelantos de Citas para Visa" width="56" height="56">
+    <span>Adelantos de Citas para Visa</span>
+  </div>
+</header>
+<main class="caja">
+  <span class="modo">Entorno de pruebas</span>
+  <h1>Prueba el asistente de ADELA</h1>
+  <p>Abajo a la derecha está <strong>Adela</strong>, el asistente virtual. Es el mismo cerebro que atenderá a tus clientes: usa tus textos, tus precios y tus reglas. Escríbele como lo haría una persona que quiere adelantar su cita.</p>
+  <h2>Cosas para probar</h2>
+  <ul class="ideas">
+    <li><code>Hola, quiero adelantar mi cita de visa</code></li>
+    <li><code>Tengo cita para julio de 2027</code></li>
+    <li><code>¿Cuánto cuesta?</code> · <code>¿Me haces un descuento?</code></li>
+    <li><code>¿Es seguro? ¿Son de la embajada?</code></li>
+    <li><code>No me acuerdo de mi contraseña</code> (pruébala sin escribir una contraseña real)</li>
+    <li><code>Quiero hablar con una persona</code> y luego el botón «Contactar al equipo»</li>
+  </ul>
+  <div class="aviso">
+    <p style="margin:0"><strong>No escribas contraseñas ni datos reales.</strong> Esta página es solo para probar: el equipo de IJV puede ver estas conversaciones de prueba. Los correos del botón «Contactar al equipo» llegan a IJV, no a tu bandeja.</p>
+  </div>
+</main>
+<footer>
+  <div class="caja">
+    <span>Adelantos de Citas para Visa · Lima, Perú</span>
+    <a href="/politica-privacidad.html">Política de privacidad</a>
+  </div>
+</footer>
+<script>window.adelantosvisaAgentConfig = { privacyUrl: '/politica-privacidad.html' };</script>
+<script src="/widget/agent.js" defer></script>
+</body>
+</html>

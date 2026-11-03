@@ -1,0 +1,3 @@
+# Sitio mínimo de ADELA: no se indexa hasta que Luis lo apruebe. Para abrirlo, borrar esta regla y el meta robots de index.html.
+User-agent: *
+Disallow: /
